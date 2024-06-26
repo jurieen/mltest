@@ -6,7 +6,7 @@ suffix=${guid//[-]/}
 suffix=${suffix:0:18}
 
 # Set the necessary variables
-RESOURCE_GROUP="rg-dp100-l${suffix}"
+RESOURCE_GROUP="rg-dp100"
 RESOURCE_PROVIDER="Microsoft.MachineLearning"
 REGIONS=("eastus" "westus" "centralus" "northeurope" "westeurope")
 RANDOM_REGION=${REGIONS[$RANDOM % ${#REGIONS[@]}]}
